@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div id="fullpage">
 
     <!--MAIN PARTICLE -->
-    <div id="particles-js">
-        <div id="heading-logo">
-            <!-- Add logo-->
-          <h1>CONVERGE</h1>
-          <h3 id="countdown"></h3>
+    <div class="section">
+        <div class="wrapper">
+                <div id="particles-js"></div>
+                        <div id="heading-logo">
+                            <!-- Add logo-->
+                          <h1>CONVERGE</h1>
+                          <h3 id="countdown"></h3>
+                        </div>
+                
         </div>
+            
     </div>
+
     
     <!--Main Content-->
-
-    <div id="landing-content" class="container mt-5 mb-5">
-        <h2>Contents</h2>
-        <p>Write something here</p>
-        <!-- We can add a image gallery or something, have to make something for making this content full page-->
+    <div class="section">
+            <div  id="landing-content" class=" container mt-5 mb-5" style="min-height:100%">
+                    <h2>Contents</h2>
+                    <p>Write something here</p>
+                    <!-- We can add a image gallery or something, have to make something for making this content full page-->
+                </div>
+            
+    </div>
+    
     </div>
     
     
@@ -35,16 +45,30 @@
     
     
     
+    
+    
+    
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
         <script src="countdown.js"></script>
         <script src="moment-countdown.js"></script>
         <script src="index.js"></script>
-         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script>
-        particlesJS.load('particles-js', 'particles.json',
-        function(){
-            console.log('particles.json loaded...')
-        });
-        </script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script> new fullpage('#fullpage', {
+           
+            responsiveWidth: 700,
+        
+            parallax: true,
+            onLeave: function(origin, destination, direction){
+                console.log("Leaving section" + origin.index);
+            },
+        });</script>
+         <script>
+                particlesJS.load('particles-js', 'particles.json',
+                function(){
+                    console.log('particles.json loaded...')
+                });
+                </script>
+    
 </body>
 </html>
