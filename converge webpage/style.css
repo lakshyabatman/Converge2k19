@@ -8,7 +8,7 @@ body{
 #heading-logo{
     font-family: 'Lobster', cursive;
     color: #f9f3f4;
-    position: relative;
+    position: absolute;
     text-align: center;
     top: 40%;
     width: 100%;
@@ -22,7 +22,7 @@ body{
     #heading-logo h1{
         font-size:4rem;
     }
-
+}
 #headind-logo h3{
     font-size: 60px;
 }
@@ -32,11 +32,7 @@ body{
     background-attachment: fixed;
     height: 100vh;
 }
-#particles2-js{
-    background-image: url('image1.jpg');
-    background-attachment: fixed;
-    height: 100vh;
-}
+
 #landing-content{
     border:2px solid transparent;
     background-color: wheat;
