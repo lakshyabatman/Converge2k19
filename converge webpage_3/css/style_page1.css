@@ -10,7 +10,7 @@ body{
     color: #f9f3f4;
     position: absolute;
     text-align: center;
-    top: 7%;
+    top: 40%;
     width: 100%;
     line-height: 0.6em;
 }
@@ -21,10 +21,25 @@ body{
 @media screen and (max-width: 700px) {
     #heading-logo h1{
         font-size:4rem;
+        
     }
 
 }
-#headind-logo h3{
+@media screen and (max-width: 700px) {
+    #heading-logo h3{
+        font-size:4rem;
+        
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #heading-logo{
+       top:7%;
+        
+    }
+
+}
+#heading-logo h3{
     font-size: 60px;
 }
 
@@ -44,15 +59,6 @@ body{
     text-align: justify;
 }
 
-#event-logo{
-    color: #f9f3f4;
-    position: relative;
-    text-align: center;
-    top: 40%;
-    width: 100%;
-    line-height: 0.6em;
-
-}
 
 #c{
     display: block;
@@ -74,26 +80,38 @@ body{
     background-size: cover;
     color: white;
     padding-left: 5vw;
-    
+}
+
+@media screen and (max-height: 800px){
+    .highlight-content{
+        height: 100%;
+    }
 
 }
+
 #highlight-heading{
     position: relative;
     top:30%; 
     font-family: 'Pacifico', cursive;
+    font-size:100px;
 
 }
-#highlight-btn{
+.highlight-btn , #event-btn{
     color: white;
     position: relative;
     top:35%;
-    left: 20px;
+    left: 17px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px 20px;
     
 }
+
+.highlight-btn:hover,#event-btn:hover{
+    box-shadow: 3px 2px 10px wheat;
+}
+
 .team{
     background-image: url('../team.jpg');
     background-size: cover;
@@ -101,4 +119,12 @@ body{
     width: 100%;
     color: white;
     padding-left: 5vw;
+}
+
+#team-heading{
+    position: relative;
+    top:30%; 
+    font-family: 'Pacifico', cursive;
+    font-size:100px;
+
 }
